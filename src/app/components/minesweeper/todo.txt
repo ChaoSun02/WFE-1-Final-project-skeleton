@@ -1,0 +1,11 @@
+1 - disable right-click mouse options and make it to put a flag
+
+2 - create a flag boolean (public) in cell-create.ts to check if the player has put a flag
+
+3 - disable clicking when a player hits a bomb or wins the game (maybe from score)
+
+4 - change the place where the score is, so it doesn't need to click again to see if the player has win. 
+
+5 - put more gametables inside (maybe form a json) - later try to make it put the bombs in random and create a random gametable
+
+6 - ? maybe put a timer

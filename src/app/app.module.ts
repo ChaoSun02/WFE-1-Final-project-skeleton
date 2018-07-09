@@ -5,11 +5,13 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { WrapperComponent } from './components/wrapper/wrapper.component';
+import { MinesweeperComponent } from './components/minesweeper/minesweeper.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WrapperComponent
+    WrapperComponent,
+    MinesweeperComponent
   ],
   imports: [
     BrowserModule,
