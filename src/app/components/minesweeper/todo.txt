@@ -5,25 +5,3 @@
 3 - put more gametables inside (maybe form a json) - later try to make it put the bombs in random and create a random gametable
 
 4 - ? maybe put a timer
-
-
-
-Code May be useful in the future (leg)
- /*if((i>0&&i<9)&&(j>0&&j<9)){
-          this.showContent(i-1,j-1);
-          this.showContent(i-1,j);
-          this.showContent(i-1,j+1);
-          this.showContent(i,j-1);
-          this.showContent(i,j+1);
-          this.showContent(i+1,j-1);
-          this.showContent(i+1,j);
-          this.showContent(i+1,j+1);
-        }
-        if(i===0&&j===0){this.showContent(i,j+1); this.showContent(i+1,j); this.showContent(i+1,j+1);}
-        if(i===0&&j===9){this.showContent(i,j-1); this.showContent(i+1,j-1); this.showContent(i+1,j);}
-        if(i===9&&j===9){this.showContent(i-1,j-1); this.showContent(i-1,j); this.showContent(i,j-1);}
-        if(i===9&&j===0){this.showContent(i-1,j); this.showContent(i-1,j+1); this.showContent(i,j+1);}
-        if(i===0&&(j>0&&j<9)){this.showContent(i,j-1); this.showContent(i,j+1); this.showContent(i+1,j-1); this.showContent(i+1,j); this.showContent(i+1,j+1);}
-        if(i===9&&(j>0&&j<9)){this.showContent(i-1,j-1); this.showContent(i-1,j); this.showContent(i-1,j+1); this.showContent(i,j-1); this.showContent(i,j+1);}
-        if((i>0&&i<9)&&j===0){this.showContent(i-1,j); this.showContent(i-1,j+1); this.showContent(i,j+1); this.showContent(i+1,j); this.showContent(i+1,j+1);}
-        if((i>0&&i<9)&&j===9){this.showContent(i-1,j-1); this.showContent(i-1,j); this.showContent(i,j-1); this.showContent(i+1,j-1); this.showContent(i+1,j);}*/
