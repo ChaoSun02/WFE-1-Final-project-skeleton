@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CellCreate } from '../../models/cell-create';
+import { GetServerGameService } from '../../services/get-server-game.service';
 
 
 @Component({
@@ -67,23 +68,32 @@ export class MinesweeperComponent implements OnInit {
   onStart(){
     this.score=0;
     this.clicking=true;
-    this.thesiGame = Math.floor(Math.random() * Math.floor(3));
+    //this.thesiGame = Math.floor(Math.random() * Math.floor(3));
+    let board = this.gameService.newGame('Entry');
     for(let i=0; i<10; i++) {
       for(let j=0; j<10; j++){
-        if(this.mines[this.thesiGame][i][j] === 'B') {
-          this.minesGame[i][j] = new CellCreate(true, false, this.mines[this.thesiGame][i][j], true);
+        if(board[i][j] === 'B') {
+          this.minesGame[i][j] = new CellCreate(true, false, board[i][j], true);
+        }
+        else if(board[i][j]==='0') {
+          this.minesGame[i][j] = new CellCreate(false, false, ' ', true);
         }
         else {
-          this.minesGame[i][j] = new CellCreate(false, false, this.mines[this.thesiGame][i][j], true);
+          this.minesGame[i][j] = new CellCreate(false, false, board[i][j], true);
         }
       }
     }
   }//initialize the values of each object in the 2darray
  
 
-  constructor() { }
+  constructor(
+    private gameService: GetServerGameService
+  ) { 
+    
+  }
 
   ngOnInit() {
+    
   }
 
   /*checkes if the cell has bomb to make a lose statement

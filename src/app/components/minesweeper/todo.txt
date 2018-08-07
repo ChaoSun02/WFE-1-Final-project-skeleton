@@ -2,6 +2,4 @@
 
 2 - create a flag boolean (public) in cell-create.ts to check if the player has put a flag
 
-3 - put more gametables inside (maybe form a json) - later try to make it put the bombs in random and create a random gametable
-
-4 - ? maybe put a timer
+3 - ? maybe put a timer
